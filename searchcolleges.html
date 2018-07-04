@@ -1,0 +1,80 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="css/master.css"/>
+    <link rel="stylesheet" type="text/css" href="css/searchcolleges.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/collegescorecard.js"></script>
+    <script type="text/javascript" src="js/searchcolleges.js"></script>
+    <title>College Classified</title>
+</head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99578720-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<body>
+
+<div class="header">
+    <img src="./resources/logo.png"/>
+</div>
+
+<div class="menu">
+
+    <div class="home section">
+        <h2><a href=./index.html>Home</a></h2>
+    </div>
+
+    <div class="scholarship section">
+        <h2><a href="./scholarships.html">Scholarships Info</a></h2>
+    </div>
+
+    <div class="search section">
+        <h2><a href="./searchcolleges.html">Search Colleges</a></h2>
+    </div>
+
+    <div class="quiz section">
+        <h2><a href="./findyourperfectcollege.html">Find Your Perfect College Fit!</h2>
+    </div>
+
+    <div class="calendar section">
+        <h2><a href="./deadlines.html">Deadlines Calendar</a></h2>
+    </div>
+
+</div>
+
+<div class="info">
+    <h1 id='my-header'>College Search</h1>
+    <br>
+    Name:
+    <br>
+    <input type='text' name='name'>
+    <button onclick="executeSearch()">Search</button>
+    <br>
+    <br>
+
+    <h1>Results</h1>
+    <br>
+    <!-- TODO : Add additional output fields.  Any from the list returned in collegeScorecardResult are eligible
+            Think about adding some styling as well -->
+    <div class="result">
+      <table id="quiz-results">
+      <thead>
+        <tr>
+            <th>Name</th>
+             <th>Website</th>
+             <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      </table>
+    </div>
+
+</div>
+
+
+</body>
